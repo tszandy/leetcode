@@ -4,9 +4,8 @@ from math import *
 from functools import reduce
 
 class Solution:
-    def func(self) -> int:
-	        pass
-
+    def defangIPaddr(self, address: str) -> str:
+        return address.replace('.','[.]')
 
 sol = Solution()
 
