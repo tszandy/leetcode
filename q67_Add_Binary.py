@@ -4,17 +4,9 @@ from math import *
 from functools import reduce
 
 class Solution:
-    def func(self) -> int:
-	        pass
-
+    def addBinary(self, a: str, b: str) -> str:
+        return bin(int(a,2)+int(b,2))[2:]
 
 sol = Solution()
 
-
-# input
-
-# output
-output = sol.func()
-# answer
-answer = ""
-print(output, answer, answer == output)
+print(sol.func())
