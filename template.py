@@ -4,6 +4,7 @@ from math import *
 from functools import reduce
 import numpy as np
 from heapq import *
+from bisect import bisect_left
 
 class Solution:
     def func(self) -> int:
