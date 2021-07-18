@@ -7,30 +7,6 @@ from heapq import *
 from bisect import bisect_left
 
 class Solution:
-    def longestCommonSubsequence_1(self, text1: str, text2: str) -> int:
-        m = len(text1)
-        n = len(text2)
-        dp =defaultdict(list)
-        dp[(-1,-1)]=0
-        
-        for i in range(m):
-            c1 = text1[i]
-            for j in range(n):
-                c2 = text2[j]
-                if c1 == c2:
-                    if i==0 or j ==0 :
-                        dp[(i,j)]=(1,None)
-                    else:
-                        max_sub = 0
-                        index = (0,0)
-                        for ii in range(i):
-                        	cur_sub = dp[(ii,j-1)]+1
-                        	if cur_sub > max_sub:
-                        		max_sub = cur_sub
-                        		index = ii,j-1
-                        dp[(i,j)].append((max_sub,index))
-        return max(dp.values())
-
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         m = len(text1)
         n = len(text2)
@@ -47,6 +23,7 @@ class Solution:
                     dp[(i,j)] = max(dp[(i-1,j)],dp[(i,j-1)])
             
         return max(dp.values())
+
 
 sol = Solution()
 
