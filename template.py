@@ -4,7 +4,7 @@ from math import *
 from functools import reduce,lru_cache,total_ordering
 import numpy as np
 from heapq import *
-from bisect import bisect_left
+from bisect import bisect_left,bisect_right
 from itertools import count
 
 class Solution:
