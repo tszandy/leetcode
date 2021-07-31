@@ -40,6 +40,7 @@ sol = Solution()
 [8,5,1,7,10,12]
 [1,3]
 [1]
+
 # output
 output = sol.func()
 # answer
