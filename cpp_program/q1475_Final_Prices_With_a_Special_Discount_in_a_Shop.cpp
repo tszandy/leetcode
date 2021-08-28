@@ -1,3 +1,8 @@
+#include<iostream>
+using namespace std;
+
+#include<vector>
+
 class Solution {
 public:
     vector<int> finalPrices(vector<int>& prices) {
@@ -12,3 +17,8 @@ public:
         return prices;
     }
 };
+
+
+int main(int argc, char *argv []){
+    cout<<"Hello World"<<endl;
+}

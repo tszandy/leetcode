@@ -14,3 +14,7 @@ public:
         node->next = node->next->next;
     }
 };
+
+int main(int argc, char *argv []){
+    cout<<"Hello World"<<endl;
+}
