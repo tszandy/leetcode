@@ -1,10 +1,13 @@
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
 
+#windows
+docker run --rm -v C:\Users\44498\Desktop\leetcode\cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
+
 #ubuntu
 docker run --rm -v /home/ice/leetcode/cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
 
 #mac
-docker run -v /Users/weixie/leetcode/cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
+docker run --rm -v /Users/weixie/leetcode/cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
 
 #docker command 
 
@@ -33,6 +36,7 @@ docker run --rm --gpus all -dti nvidia/cuda:11.4.1-runtime-ubuntu18.04 /bin/bash
 docker run --rm --gpus all -ti nvidia/cuda:11.4.1-runtime-ubuntu18.04 /bin/bash
 
 #rm all unrunning docker containers
+docker container prune
 docker rm $(docker ps -aq)
 
 #docker 
