@@ -11,8 +11,8 @@ foreach(file_name ${leetcode_SRC})
 
 	get_filename_component(new_file_name ${base_file_name} NAME)
 
-	message(${file_name})
-	message(${new_file_name})
+	# message(${file_name})
+	# message(${new_file_name})
 	
 	add_executable(${new_file_name} ${file_name})
 endforeach()
