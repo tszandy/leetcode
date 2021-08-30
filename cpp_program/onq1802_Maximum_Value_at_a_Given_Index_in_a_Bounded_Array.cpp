@@ -1,3 +1,6 @@
+#include<iostream>
+using namespace std;
+
 class Solution {
 public:
     int maxValue(int n, int index, int maxSum) {
@@ -13,3 +16,8 @@ public:
         return (maxSum-sum)/n+index;
     }
 };
+
+
+int main(int argc, char *argv []){
+    cout<<"Hello World"<<endl;
+}

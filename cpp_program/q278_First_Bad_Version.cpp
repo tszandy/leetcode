@@ -9,7 +9,7 @@ class Solution {
     int bad;
 public:
     Solution(int bad){
-        bad(bad);
+        bad=bad;
     }
     int firstBadVersion(int n) {
         long l=1,r=n;
@@ -27,7 +27,7 @@ public:
     }
 private:
     bool isBadVersion(int version){
-        return version>=bad
+        return version>=bad;
     }
 };
 

@@ -1,3 +1,8 @@
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
 class Solution {
 public:
     vector<int> runningSum(vector<int>& nums) {
@@ -7,3 +12,7 @@ public:
         return nums;
     }
 };
+
+int main(int argc, char *argv []){
+    cout<<"Hello World"<<endl;
+}
