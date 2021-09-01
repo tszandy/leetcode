@@ -1,5 +1,8 @@
 From ubuntu:18.04
 
-Run apt-get update && apt-get install -y apt-utils build-essential cmake sudo
+Run apt-get update && apt-get install -y apt-utils build-essential cmake sudo vim
 
-Run adduser wei
+Run useradd -m -s /bin/bash wei
+
+USER wei
+
