@@ -20,11 +20,11 @@ docker ps
 #docker list all images
 docker images
 
+#docker inspect property of container
+docker inspect -f ${container_name_or_id}
+
 #docker list ip address of running container ${container_name_or_id}
 docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' ${container_name_or_id}
-
-#docker run base ubuntu in detach mode --rm remove container when unrunning -t -i stdin interacitive
-docker run --rm -ti ubuntu:18.04
 
 #docker run base ubuntu in detach mode --rm remove container when unrunning -d detach -t -i stdin interacitive
 docker run --rm -dti ubuntu:18.04
@@ -41,5 +41,20 @@ docker rm $(docker ps -aq)
 
 #docker 
 docker attach ${container_name_or_id} --detach-keys "ctrl-a"
+
+# docker network
+docker network ls
+docker network create ${network_name}
+docker network rm ${network_name}
+docker network inspect ${network_name}
+docker inspect ${network_name}
+
+# docker volume
+docker volume ls
+docker volume create ${volume_name}
+docker volume rm ${volume_name}
+docker volume inspect ${volume_name}
+docker inspect ${volume_name}
+
 
 
