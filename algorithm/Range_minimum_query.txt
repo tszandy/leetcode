@@ -1,0 +1,4 @@
+Range_minimum_query
+wiki : https://en.wikipedia.org/wiki/Range_minimum_query
+
+In computer science, a range minimum query (RMQ) solves the problem of finding the minimal value in a sub-array of an array of comparable objects. Range minimum queries have several use cases in computer science, such as the lowest common ancestor problem and the longest common prefix problem (LCP).
