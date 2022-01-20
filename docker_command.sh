@@ -1,7 +1,7 @@
 docker build -f Dockerfile_cpp -t tszandy/ubuntu_cpp:0.01 . 
 
 #windows
-docker run --rm -v C:\Users\44498\Desktop\leetcode\cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
+docker run --rm -v ${PWD}\cpp_program:/home/ice/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
 
 #ubuntu
 docker run --rm -v /home/ice/leetcode/cpp_program:/home/wei/cpp_program -it tszandy/ubuntu_cpp:0.01 /bin/bash
